@@ -3,7 +3,7 @@
 $dataAtual = date("d/m/Y");
 
 // Crie a mensagem de commit com a data atual
-$mensagemCommit = "Estou trabalhando - " . $dataAtual;
+$mensagemCommit = "Estou trabalhando  - " . $dataAtual;
 
 // Adicione todos os arquivos alterados
 exec("git add .");
