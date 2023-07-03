@@ -1,9 +1,9 @@
 <?php
 // Obtenha a data atual
-$dataAtual = date("d/m/Y");
+$dataAtual = date("d/m/Y h:i:s");
 
 // Crie a mensagem de commit com a data atual
-$mensagemCommit = "Estou trabalhando  - " . $dataAtual;
+$mensagemCommit = "Estou trabalhando - " . $dataAtual;
 
 // Adicione todos os arquivos alterados
 exec("git add .");
