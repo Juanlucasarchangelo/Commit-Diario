@@ -12,5 +12,5 @@ exec("git add .");
 exec("git commit -m \"$mensagemCommit\"");
 
 // Envie o commit para o repositório remoto
-exec("git push origin master");
+exec("git push origin main");
 ?>
