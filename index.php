@@ -1,4 +1,14 @@
 <?php
+
+$arquivo = fopen(
+        'meuarquivo.txt',
+        'w'
+    );
+if (
+    $arquivo
+    == false
+)
+    die('Não foi possível criar o arquivo.');
 // Obtenha a data atual
 $dataAtual = date("d/m/Y h:i:s");
 
@@ -13,4 +23,3 @@ exec("git commit -m \"$mensagemCommit\"");
 
 // Envie o commit para o repositório remoto
 exec("git push origin main");
-?>
