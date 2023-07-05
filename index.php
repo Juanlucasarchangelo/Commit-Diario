@@ -1,13 +1,15 @@
 <?php
 
-$arquivo = fopen(
-    'nome.txt',
-    'w'
-);
+$nome = date("H-i-s_Y-m-d") . ".txt";
+
+$arquivo = fopen($nome, 'w');
 
 if ($arquivo == false) {
     die('Não foi possível criar o arquivo.');
+} else {
+    echo "Arquivo criado com sucesso: $nome";
 }
+
 
 // Obtenha a data atual
 $dataAtual = date("d/m/Y h:i:s");
