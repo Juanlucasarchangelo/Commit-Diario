@@ -1,9 +1,10 @@
 <?php
 
 $arquivo = fopen(
-    'oi.txt',
+    'nome.txt',
     'w'
 );
+
 if ($arquivo == false) {
     die('Não foi possível criar o arquivo.');
 }
