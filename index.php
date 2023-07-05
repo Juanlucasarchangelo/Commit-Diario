@@ -10,7 +10,6 @@ if ($arquivo == false) {
     echo "Arquivo criado com sucesso: $nome";
 }
 
-
 // Obtenha a data atual
 $dataAtual = date("d/m/Y h:i:s");
 
